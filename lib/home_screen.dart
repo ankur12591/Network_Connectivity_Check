@@ -84,12 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
       iswificonnected = false;
     } else if (connectivityResult == ConnectivityResult.wifi) {
       iswificonnected = true;
-      setState(() async {
-        // wifiBSSID = await (Connectivity().getWifiBSSID());
-        wifiIP = await (Connectivity().checkConnectivity());
-        // wifiIP = await (Connectivity().getWifiIP());
-        // wifiName = await (Connectivity().getWifiName());
-      });
+       // setState(() async {
+      // //   wifiBSSID = await (Connectivity().getWifiBSSID());
+      //  //  wifiIP = await (Connectivity().checkConnectivity());
+         // iswificonnected = true;
+      // //   wifiIP = await (Connectivity().getWifiIP());
+      // //   wifiName = await (Connectivity().getWifiName());
+      //  });
     }
   }
 }
